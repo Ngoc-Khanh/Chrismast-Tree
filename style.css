@@ -1,0 +1,440 @@
+* {
+  box-sizing: content-box;
+}
+body {
+  background-color: #e74c3c;
+  height: 100%;
+  margin: 0;
+}
+h1 {
+  font-family: "Great Vibes", cursive;
+  font-weight: 100;
+  margin: 15px 0 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 70px;
+}
+
+h2 {
+  font-family: "Great Vibes", cursive;
+  font-weight: 100;
+  margin-top: 5px;
+  margin-left: -70px;
+  width: 250px;
+  text-align: center;
+  color: #fff;
+  animation: slide-up 2s ease-out infinite;
+}
+
+@keyframes slide-up {
+  50% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.main {
+  background-color: transparent;
+  background-image: url(http://wp.agens.no/smakebit/wp-content/themes/smakebiten/img/snow1.png),
+    url(http://wp.agens.no/smakebit/wp-content/themes/smakebiten/img/snow2.png);
+  -webkit-animation: snow 20s linear infinite;
+  -moz-animation: snow 20s linear infinite;
+  -ms-animation: snow 20s linear infinite;
+  animation: snow 20s linear infinite;
+  z-index: 999;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin-top: 0;
+  pointer-events: none;
+  position: absolute;
+}
+@keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+
+  100% {
+    background-position: 500px 1000px, 400px 400px, 300px 300px;
+  }
+}
+@-moz-keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+
+  100% {
+    background-position: 500px 1000px, 400px 400px, 300px 300px;
+  }
+}
+@-webkit-keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+
+  100% {
+    background-position: 500px 1000px, 400px 400px, 300px 300px;
+  }
+}
+@-ms-keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+
+  100% {
+    background-position: 500px 1000px, 400px 400px, 300px 300px;
+  }
+}
+
+.container {
+  width: 1024px;
+  margin: auto;
+  padding-top: 53px;
+}
+
+.star {
+  display: block;
+  width: 0px;
+  height: 0px;
+  margin: auto;
+  zoom: 1.5;
+  position: relative;
+  bottom: -20px;
+  z-index: 2;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid #ffe066;
+  border-left: 100px solid transparent;
+  transform: rotate(35deg) scale(0.2);
+}
+.star:before {
+  border-bottom: 80px solid #ffe066;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -45px;
+  left: -65px;
+  display: block;
+  content: "";
+  transform: rotate(-35deg);
+}
+.star:after {
+  position: absolute;
+  display: block;
+  top: 3px;
+  left: -105px;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid #ffe066;
+  border-left: 100px solid transparent;
+  transform: rotate(-70deg);
+  content: "";
+}
+.tree01 {
+  position: relative;
+  width: 300px;
+  height: 0;
+  border: 50px solid transparent;
+  border-bottom: 50px solid green;
+  margin: auto;
+  top: -5px;
+}
+.tree01:after {
+  content: "";
+  position: absolute;
+  top: -98px;
+  width: 280px;
+  height: 0;
+  border: 50px solid transparent;
+  border-bottom: 50px solid green;
+  margin: auto;
+  left: -42px;
+}
+.tree02 {
+  position: relative;
+  width: 245px;
+  height: 0;
+  border: 50px solid transparent;
+  border-bottom: 50px solid green;
+  margin: auto;
+  top: -3px;
+}
+.tree02:after {
+  content: "";
+  position: absolute;
+  top: -98px;
+  width: 209px;
+  height: 0;
+  border: 50px solid transparent;
+  border-bottom: 50px solid green;
+  margin: auto;
+  left: -32px;
+}
+.tree03 {
+  position: relative;
+  width: 170px;
+  height: 0;
+  border: 50px solid transparent;
+  border-bottom: 50px solid green;
+  margin: auto;
+}
+.tree03:after {
+  content: "";
+  position: absolute;
+  top: -98px;
+  width: 126px;
+  height: 0;
+  border: 50px solid transparent;
+  border-bottom: 50px solid green;
+  margin: auto;
+  left: -28px;
+}
+.tree04 {
+  position: relative;
+  width: 85px;
+  height: 0;
+  border: 50px solid transparent;
+  border-bottom: 50px solid green;
+  margin: auto;
+  bottom: -3px;
+}
+.tree04:after {
+  content: "";
+  position: absolute;
+  top: -98px;
+  width: 35px;
+  height: 0;
+  border: 50px solid transparent;
+  border-bottom: 50px solid green;
+  margin: auto;
+  left: -25px;
+}
+.tree04:before {
+  content: "";
+  position: absolute;
+  top: -98px;
+  width: 2px;
+  height: 0;
+  border: 30px solid transparent;
+  border-bottom: 22px solid green;
+  margin: auto;
+  left: 11px;
+}
+.line {
+  z-index: 1;
+  position: absolute;
+  top: 26px;
+  left: -29px;
+  width: 121px;
+  height: 0;
+  background: #ffe066;
+  border: 1px dashed #fff;
+  transform: rotate(-24deg);
+}
+.bauble.one {
+  width: 13px;
+  height: 13px;
+  background: #ffe066;
+  margin: 2px auto;
+  position: relative;
+}
+.bauble {
+  z-index: 1;
+  border-radius: 100%;
+}
+.line2 {
+  top: -24px;
+  left: -6px;
+  width: 156px;
+  transform: rotate(-18deg);
+}
+.line3 {
+  top: 25px;
+  left: -24px;
+  width: 197px;
+  transform: rotate(-13deg);
+}
+.line4 {
+  top: -24px;
+  left: -5px;
+  width: 235px;
+  transform: rotate(-12deg);
+}
+.line5 {
+  top: 26px;
+  left: -21px;
+  width: 269px;
+  transform: rotate(-10deg);
+}
+.line6 {
+  top: -23px;
+  left: -6px;
+  width: 294px;
+  transform: rotate(-10deg);
+}
+.line7 {
+  top: 26px;
+  left: -50px;
+  width: 353px;
+  transform: rotate(-7deg);
+}
+.line8 {
+  top: -23px;
+  left: -10px;
+  width: 79px;
+  transform: rotate(-35deg);
+}
+
+.socks {
+  position: absolute;
+  top: 80px;
+  left: 10px;
+  z-index: 1;
+  transform: rotate(10deg);
+}
+.socks:after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 35px;
+  background: #e54b4b;
+  border-radius: 5px;
+}
+.socks:before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 25px;
+  height: 15px;
+  border-radius: 30px;
+  background: #e54b4b;
+}
+.tree-base {
+  width: 450px;
+  height: 45px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.15);
+  position: relative;
+  top: 72px;
+  border-radius: 100%;
+}
+.tree-base:after {
+  content: "";
+  width: 50px;
+  height: 100px;
+  background: #84714f;
+  position: absolute;
+  top: -77px;
+  left: 0;
+  margin: auto;
+  right: 0;
+}
+
+.gift {
+  width: 100px;
+  height: 69px;
+  transform: translate3d(-50%, -50%, 0);
+  cursor: pointer; /* Make the gift clickable */
+}
+.gift-top {
+  position: relative;
+  width: 115%;
+  height: 25%;
+  left: -2px;
+  background: #ffc113;
+  border-radius: 5px 5px 0 0;
+  transform: translate3d(-5%, 0, 0);
+  background-image: linear-gradient(
+    to right,
+    #e4ad13 0%,
+    #e4ad13 44%,
+    #ffc113 44%,
+    #ffc113 56%,
+    #e4ad13 56%,
+    #e4ad13 100%
+  );
+}
+.gift-top::before,
+.gift-top::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border: 10px solid #ffc113;
+  border-radius: 50% 50% 0 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate3d(-100%, -100%, 0) skew(10deg, 10deg);
+}
+.gift-top::after {
+  border-radius: 50% 50% 50% 0;
+  transform: translate3d(0, -100%, 0) skew(-10deg, -10deg);
+}
+.gift-box {
+  width: 100%;
+  height: 75%;
+  background-image: linear-gradient(
+    to right,
+    #ffc113 0%,
+    #ffc113 45%,
+    #e4ad13 45%,
+    #e4ad13 55%,
+    #ffc113 55%,
+    #ffc113 100%
+  );
+  border-radius: 0 0 5px 5px;
+}
+
+/* ================= POPUP CSS ================= */
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #FF6F61;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #FF3B2F;
+}
+
+.popup {
+  position: fixed;
+  width: 210px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F8C7DA;
+  color: white;
+  font-family: 'Comic Sans MS', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  border: 2px solid #E57373;
+  border-radius: 10px;
+  animation: fadeIn 0.5s ease-out;
+  z-index: 1000;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
